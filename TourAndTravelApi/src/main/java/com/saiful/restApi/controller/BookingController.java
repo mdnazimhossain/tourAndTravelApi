@@ -49,9 +49,8 @@ public class BookingController {
         ) {
             BookingDTO bookingDTO = new BookingDTO();
 
-//            booking.getCustomer().setBooking(null);  for relation  write by sir
-
-            booking.getCustomer().setBooking(null);
+            booking.getCustomer().setBooking(null);                        //booking.getCustomer().setBooking(null);  for relation  write by sir
+            booking.getHajjPackage().setBooking(null);                         //booking.getCustomer().setBooking(null);  for relation  write by sir
             BeanUtils.copyProperties(booking, bookingDTO);
             bookingDTOList.add(bookingDTO);
         }
@@ -69,9 +68,8 @@ public class BookingController {
         booking = bookingService.getById(id);
         if (booking.getId() != null){
 
-//            booking.getCustomer().setBooking(null);  for relation  write by sir
-
-            booking.getCustomer().setBooking(null);
+            booking.getCustomer().setBooking(null);                        //booking.getCustomer().setBooking(null);  for relation  write by sir
+            booking.getHajjPackage().setBooking(null);                       //booking.getCustomer().setBooking(null);  for relation  write by sir
             BookingDTO bookingDTO = new BookingDTO();
             BeanUtils.copyProperties(booking, bookingDTO);
             return ResponseEntity.status(HttpStatus.OK).body(bookingDTO);

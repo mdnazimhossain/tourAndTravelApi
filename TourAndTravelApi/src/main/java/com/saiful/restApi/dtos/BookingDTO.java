@@ -1,6 +1,7 @@
 package com.saiful.restApi.dtos;
 
 import com.saiful.restApi.entity.Customer;
+import com.saiful.restApi.entity.HajjPackage;
 import lombok.Data;
 
 @Data
@@ -12,5 +13,5 @@ public class BookingDTO {
     private String billing;
     private String status;
     private Customer customer;
-
+    private HajjPackage hajjPackage;
 }

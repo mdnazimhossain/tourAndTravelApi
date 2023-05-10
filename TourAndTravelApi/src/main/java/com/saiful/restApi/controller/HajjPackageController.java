@@ -70,4 +70,6 @@ public class HajjPackageController {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Data Not Found!!");
 //        return new ResponseEntity("Hello World", HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+
 }

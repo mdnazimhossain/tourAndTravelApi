@@ -1,10 +1,7 @@
 package com.saiful.restApi.entity;
 
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -13,7 +10,8 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class Booking extends BaseModel {
 
     private String Date;

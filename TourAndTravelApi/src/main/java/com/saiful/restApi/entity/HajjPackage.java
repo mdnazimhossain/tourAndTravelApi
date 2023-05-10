@@ -1,9 +1,7 @@
 package com.saiful.restApi.entity;
 
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.hibernate.annotations.CascadeType;
 
 
@@ -14,6 +12,8 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class HajjPackage extends BaseModel {
 
     private String name;
