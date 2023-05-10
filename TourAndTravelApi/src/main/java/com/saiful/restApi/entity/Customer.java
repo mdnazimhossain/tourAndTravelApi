@@ -27,5 +27,10 @@ public class Customer extends BaseModel {
     private List<Booking> booking;
 
 
+    
+
+
+
+
 
 }
